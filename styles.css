@@ -7,20 +7,20 @@
 
 .main-header {
   display: flex;
-  padding-left: 20%;
+  align-items: center;
+  padding-left: 6%;
   height: 80px;
   color: white;
-  background-color: darkgreen;
-  justify-content: flex-start;
+  background-color: green;
+  /* justify-content: flex-start; */
   font-size: xx-large;
   
 }
 
 .entire-todo {
-  border: black 10px;
   padding:5%;
   margin:5%;
-  grid-template-columns: 250px 1fr;
+  /* grid-template-columns: 250px 1fr; */
   justify-content: center;
   align-items: left;
 }
@@ -30,31 +30,60 @@
 }
 
 .list-item {
-  align-items: center;
+  
   display: flex;
+  align-items: center;
   padding: 20px;
-  width: 80%;
+  width: 100%;
   height: 50px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px 5px 5px 5px;
+  border-top: lightgray solid 1px;
+  border-radius: 5px;
+  border-left: lightgray solid 1px;
+  border-right: lightgray solid 1px;
   justify-content: space-between;
 }
 
-.todo-section {
+
+.list-item:last-child {
+border-bottom: lightgray solid 1px;
   
- margin-right: 20%;
- margin-left: 20%;
+}
+
+.todo-section {
+  display:flex;
+  flex-direction: column;
+  border: lightgray 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1%;
 }
 
 .submit-button {
   background-color: rgb(120, 196, 221);
   border: none;
+  border-radius: 5px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
 }
 
+.add-todo {
+  margin: 20px;
+}
+
+.todos {
+  margin: 5px;
+  padding: 5px;
+}
+
+.todo-items-div {
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 10px;
+}
